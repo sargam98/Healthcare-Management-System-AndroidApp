@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HMS</string>
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+    <string name="back4app_app_id">wc3BAPxW9fBtB1yOTDdBIQHeRu8Izs9TJxvFKDb3</string>
+    <string name="back4app_client_key">NFGTQTWAeRAYTvEPiCiSt1fDN3ggf5Gaj9lWm74B</string>
+    <string name="title_activity_passenger">Passenger</string>
+</resources>

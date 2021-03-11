@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    tools:context=".CheckUser">
+
+    <TextView
+        android:id="@+id/checkUserDisplayText"
+        android:layout_width="319dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:autoText="false"
+        android:background="#FFFFFF"
+        android:text="Are you a Driver or in need of an Ambulance ?"
+        android:textSize="24sp"
+        app:fontFamily="sans-serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="304dp"
+        android:layout_height="389dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.604">
+
+        <RadioButton
+            android:id="@+id/Passenger"
+            android:layout_width="245dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="60dp"
+            android:background="#FFFFFF"
+            android:checked="true"
+            android:onClick="createAnonymous"
+            android:text="I am in need of an Ambulance"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.57"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <RadioButton
+            android:id="@+id/Driver"
+            android:layout_width="194dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="64dp"
+            android:background="#FFFFFF"
+            android:onClick="createAnonymous"
+            android:text="I am a Driver"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Passenger"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/applyUserBtn"
+        android:layout_width="243dp"
+        android:layout_height="65dp"
+        android:text="NEXT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.927" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
